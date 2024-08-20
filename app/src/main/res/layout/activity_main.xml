@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/download"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="389dp"
+        android:layout_height="455dp"
+        android:background="#4D4B4444"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleteLo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.117" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usernameLo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:endIconMode="clear_text"
+        android:paddingHorizontal="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titletext">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/usernameT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="name"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordLo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingHorizontal="15dp"
+        app:endIconMode="password_toggle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/usernameLo">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordT"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:hint="Enter the password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button_apple"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#62BA66"
+        android:gravity="center"
+        android:text="Agree and continue  "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/text2"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="@+id/text2"
+        app:layout_constraintTop_toBottomOf="@+id/text2" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="By selecting Agree and continue belew,?"
+        android:textColor="#08EBB6"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/passwordLo"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/passwordLo"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLo" />
+
+    <TextView
+        android:id="@+id/agreele"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I Agree tp terms of Service and Privacy Policy"
+        android:textColor="#43A047"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/text2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/text2"
+        tools:layout_editor_absoluteY="447dp" />
+
+    <TextView
+        android:id="@+id/titletext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:paddingRight="80dp"
+        android:paddingLeft="20dp"
+        android:text="Looks like you don't have an account.Let's create a account for "
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/titleteLo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/titleteLo"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/gmailLe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="jane.doe@gmail.com"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="185dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
